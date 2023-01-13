@@ -16,6 +16,14 @@ function showTime(){
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s :s;
     
-    
+    var time = h + ":" + m + ":" + s + " " + session;
+
+    document.getElementById("myClock"). innerText = time;
+
+    document.getElementById("myClock"). textContent = time;
+
+  setTimeout(showTime, 1000);
 
 }
+
+showTime();
